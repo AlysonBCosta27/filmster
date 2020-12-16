@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, StyleSheet, Image, TouchableOpacity, FlatList} from 'react-native';
+import {View, StyleSheet, FlatList} from 'react-native';
 import Filmster from '../components/Filmster';
 import ProductRow from '../components/ProductRow';
 import axios from 'axios';
@@ -10,8 +10,8 @@ const App = () => {
   const [filme, setFilme] = useState();
 
   const fetchFilme = async () =>{
-    const response = await axios.get('https://my-json-server.typicode.com/AlysonBCosta27/getpizza-data/pizzas');
-    setPizzas(response.data);
+    const response = await axios.get('');
+    setFilme(response.data);
   }
 
   useEffect(()=>{

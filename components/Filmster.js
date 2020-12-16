@@ -5,12 +5,12 @@ import logo from '../assets/logo.png';
 
 const cartAction = () => {
     console.log("Clicou no carrinho");
-  }
+  } // log de ação ao clicar
 
 const Filmster = () => {
     return(
     <Header
-       backgroundColor='#131313'
+       backgroundColor='#131313' // fundo do cabeçalho
     >
         <View/>
         <Image source={logo} style={styles.logo}/>
@@ -18,7 +18,7 @@ const Filmster = () => {
           <Icon
           type='font-awesome'
           color='#fff'
-          name='shopping-cart'
+          name='shopping-cart' // nome do icone usado
           />
         </TouchableOpacity>
     </Header>
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   logo:{
     width:30,
     height: 30
-  }
+  } // logo no header
 });
 
 export default Filmster;

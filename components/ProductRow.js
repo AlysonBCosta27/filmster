@@ -40,51 +40,51 @@ const ProductRow = (props)=>{
 
 const styles = StyleSheet.create({
     card: {
-        marginTop: 25,
-        marginBottom: 5,
-        flex: 1,
-        borderRadius: 10,
-        shadowColor: "#000",
+        marginTop: 25, //margem do topo do card
+        marginBottom: 5, //margem de baixo do card
+        flex: 1, //
+        borderRadius: 10, //arredondamento da borda do card
+        shadowColor: "#000", //cor da borda
         shadowOffset:{
         width: 0,
         height: -5
-        },
-        shadowOpacity: 0.1,
-        shadowRadius: 20,
-        elevation: 5,
-        backgroundColor: "#fff",
-        marginHorizontal: 10,
-        overflow: "hidden"
+        }, //o tamanho da sombra
+        shadowOpacity: 0.1, // opacidade da sombra
+        shadowRadius: 20, // tamanho da sombra
+        elevation: 5, // tamanho da elevação da sombra
+        backgroundColor: "#fff", // cor da sombra
+        marginHorizontal: 10, 
+        overflow: "hidden" // faz com que o card não mostre todas as informações dele, somente clicando sobre ele
     },
     topCard:{
         flex: 1,
         flexDirection: "row"
     },
     title:{
-        fontSize: 20,
-        color: "#e22424",
-        fontWeight: "bold"
+        fontSize: 20, // tamanho da fonte
+        color: "#e22424", // cor da fonte
+        fontWeight: "bold" // fonte usada
     },
     desc:{
-        color: "#626262",
+        color: "#626262", // cor da descrição do card
     },
     image:{
         width: 85,
         height: 70
-    },
+    }, // imagem do card [Poster do filme]
     left:{
         flex: 3,
         paddingHorizontal: 10
     },
     price:{
-        fontSize: 15,
-        color: "#e22424",
-        fontWeight: "bold"
+        fontSize: 15, // fonte do preço
+        color: "#e22424", // cor da fonte
+        fontWeight: "bold" // fonte usada
     },
     titleAndPrice:{
         flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center"
+        justifyContent: "space-between", // centraliza o titulo e o preço na horizontal com o "row"
+        alignItems: "center" // alinha os items para o centro do card
     },
     buttonMargin:{
         flex: 1,
